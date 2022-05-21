@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class TimeLogTemplate {
+
     
    public void execute(Strategy strategy){
         long startTime = System.currentTimeMillis();
