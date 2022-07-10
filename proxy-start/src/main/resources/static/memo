@@ -1,3 +1,7 @@
 1. @SpringBootApplication(scanBasePackages = "hello.proxy.app")
    app 하위 클래스 컴포넌트 스캔함
 2. @Import로 스프링빈 등록
+3. aop 적용 수만큼 프록시를 생성하는 것이 아니다 프록시는 하나만 만들고 여러 어드바이저를 적용한다.
+4. pointCut으로 'AspectJExpressionPointCut' 주로 사용
+5. 부가 기능 , 해당 부가기능을 선택하는 기능을 합친 하나의 모듈이 aspect
+6. 스프링은 AspectJ의 문법을 차용하고 프록시 방식의 AOP를 적용한다. AspectJ를 직접 사용하는 것이 아니다.
